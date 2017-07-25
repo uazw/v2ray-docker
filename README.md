@@ -10,4 +10,4 @@
 6. enjoy your days!
 
 ## v2ray repo link
-https://www.v2ray.com
+for more information about configuration & client side application please go to https://www.v2ray.com
