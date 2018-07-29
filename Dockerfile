@@ -5,5 +5,5 @@ ENV DOWNLOAD_LINK=https://github.com/v2ray/v2ray-core/releases/download/$VERSION
 ENV UNZIP_PACKAGE=v2ray-$VERSION-linux-64
 
 RUN apt-get update &&  apt-get install -y unzip curl
-RUN mkdir /v2ray && mkdir /apps && cd /apps && curl $DOWNLOAD_LINK && curl  -L -H "Cache-Control: no-cache" -o v2ray.zip $DOWNLOAD_LINK && unzip v2ray.zip && cd $UNZIP_PACKAGE && chmod +x v2ray && cp -R $UNZIP_PACKAGE/* /v2ray
+RUN mkdir /v2ray && mkdir /apps && cd /apps && curl $DOWNLOAD_LINK && curl  -L -H "Cache-Control: no-cache" -o v2ray.zip $DOWNLOAD_LINK && unzip v2ray.zip && cd $UNZIP_PACKAGE && chmod +x v2ray && cp -R ./* /v2ray
 CMD /v2ray/v2ray --config=/v2ray/runtime/config.json
