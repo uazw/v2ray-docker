@@ -1,6 +1,6 @@
 FROM ubuntu
 
-ENV VERSION=v2.33.1
+ENV VERSION=v3.32.1
 ENV DOWNLOAD_LINK=https://github.com/v2ray/v2ray-core/releases/download/$VERSION/v2ray-linux-64.zip
 ENV UNZIP_PACKAGE=v2ray-$VERSION-linux-64
 
